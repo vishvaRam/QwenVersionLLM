@@ -9,7 +9,6 @@ This project provides a Python script that utilizes the Qwen2-VL model to extrac
 - [Dependencies](#dependencies)
 - [How It Works](#how-it-works)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -86,4 +85,9 @@ Make sure to install these dependencies via the `requirements.txt` file.
 4. **Entity Extraction**: The `extract_entities` method uses regular expressions to extract specific details from the generated output.
 
 5. **Image to Text Conversion**: The `img_to_text` method combines all the above steps to process the image and return the extracted details as a list.
+
+## Contributing
+
+Contributions are welcome! Please create a pull request for any enhancements or bug fixes.
+
 
