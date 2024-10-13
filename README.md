@@ -2,6 +2,13 @@
 
 This project provides a Python script that utilizes the Qwen2-VL model to extract handwritten details from payment receipt vouchers. The model processes images of receipts and retrieves specific information such as names, receipt numbers, dates, rupees, amounts in words, and reasons for payment.
 
+## Memory Management
+
+The `ImageToTextModel` class is designed to optimize memory usage by ensuring that only one instance of the model and its processor is loaded into memory. This is achieved through the use of class variables, which cache the model and processor after their initial loading. 
+
+By doing so, the class prevents redundant loading of the model, saving both time and computational resources. This approach is particularly beneficial in scenarios where the model is accessed multiple times, as it significantly reduces the overhead associated with loading large models repeatedly.
+
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -9,6 +16,7 @@ This project provides a Python script that utilizes the Qwen2-VL model to extrac
 - [Dependencies](#dependencies)
 - [How It Works](#how-it-works)
 - [Contributing](#contributing)
+
 
 ## Installation
 
@@ -33,6 +41,7 @@ This project provides a Python script that utilizes the Qwen2-VL model to extrac
   pip install git+https://github.com/huggingface/transformers
   
   ```
+
 
 ## Usage
 
